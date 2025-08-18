@@ -3,7 +3,7 @@ body {
 }
 
 .img-responsive {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   display: block;
 }
@@ -26,6 +26,10 @@ section {
 .grid-2-columns {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+.embed {
+  width: 100%;
+  aspect-ratio: 1/1;
 }
 .grid-3-columns-first-narrow {
   display: grid;
@@ -145,6 +149,9 @@ section.secondary {
   line-height: 1.5;
   margin: 0;
 }
+.card-header.grid {
+  grid-gap: 0;
+}
 .card-body {
   padding: 30px;
 }
@@ -228,6 +235,12 @@ footer li {
   main h3 {
     font-size: 16px;
     letter-spacing: 3px;
+  }
+  .card-header img {
+    display: none;
+  }
+  .embed {
+    aspect-ratio: 16/9;
   }
   .card-body {
     padding: 30px;

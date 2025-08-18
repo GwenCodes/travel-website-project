@@ -1,0 +1,206 @@
+/* ====== Base Styles ====== */
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f8f8f8;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* ====== Grid Layouts ====== */
+.grid {
+  display: grid;
+  gap: 64px;
+}
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.grid-3-columns-first-narrow {
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
+/* ====== Responsive Images ====== */
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+/* ====== Header Styles ====== */
+header {
+  color: white;
+  text-align: center;
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../image/waterfall.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 200px 0;
+}
+header h1 {
+  font-weight: 700;
+  font-size: 96px;
+  margin: 30px 0;
+  line-height: 1.6;
+  text-shadow: 4px 4px 4px rgba(0,0,0,0.25);
+}
+header h2 {
+  font-size: 40px;
+  font-weight: 400;
+  text-shadow: 4px 4px 4px rgba(0,0,0,0.25);
+}
+header h3 {
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  text-shadow: 4px 4px 4px rgba(0,0,0,0.25);
+}
+header a {
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 16px 32px;
+  background-color: white;
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 32px;
+}
+
+/* ====== Main Content Styles ====== */
+main {
+  background-color: white;
+}
+main h2 {
+  font-size: 40px;
+  font-weight: 400;
+  margin: 0;
+}
+main h3 {
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin: 0;
+  opacity: 0.3;
+}
+main p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  opacity: 0.7;
+}
+
+/* ====== Secondary Section ====== */
+section.secondary {
+  background-color: #f8f8f8;
+}
+.secondary h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0;
+}
+.secondary h3 {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin: 0;
+  opacity: 0.3;
+}
+.card {
+  background-color: white;
+  padding: 24px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* ====== Footer Styles ====== */
+footer {
+  color: white;
+  background-image: linear-gradient(rgba(60,54,86,0.7), rgba(60,54,86,0.7)), url("../image/tours.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+footer h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+}
+footer p {
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 24px;
+  opacity: 0.7;
+}
+footer ul {
+  padding: 0;
+}
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* ====== Responsive Design ====== */
+@media (max-width: 960px) {
+  .container {
+    padding: 0 10px;
+  }
+  header {
+    padding: 100px 0;
+  }
+  header h1 {
+    font-size: 48px;
+    margin: 15px 0;
+    line-height: 1;
+  }
+  header h2 {
+    font-size: 20px;
+  }
+  header h3 {
+    font-size: 12px;
+  }
+  header a {
+    font-size: 10px;
+    padding: 10px 15px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin: 0;
+    padding: 40px;
+  }
+  .grid-2-columns {
+    grid-template-columns: 1fr;
+  }
+  .grid-3-columns {
+    grid-template-columns: 1fr;
+  }
+  main h2 {
+    font-size: 24px;
+    margin: 0;
+  }
+  main h3 {
+    font-size: 16px;
+    letter-spacing: 3px;
+  }
+}

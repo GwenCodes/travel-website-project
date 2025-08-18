@@ -1,20 +1,23 @@
 body {
   font-family: "poppins", sans-serif;
-  background: #272044;
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 .container {
   max-width: 1400px;
   margin: 0 auto;
 }
-section {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 100px 170px;
+.text-center {
+  text-align: center;
 }
-.img-responsive {
-  width: auto;
-  height: 100%;
-  border-radius: 10px;
+section {
+  margin: 0 auto;
+  padding: 100px;
+  row-gap: 64px;
 }
 .grid {
   display: grid;
@@ -28,6 +31,12 @@ section {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
 }
+
+.grid-3-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 32px;
+}
 header {
   color: white;
   text-align: center;
@@ -37,7 +46,6 @@ header {
   background-size: cover;
   justify-content: center;
   padding: 200px 0;
-  margin-bottom: 30px;
 }
 header h1 {
   font-weight: 700;
@@ -82,19 +90,50 @@ main h2 {
 }
 main h3 {
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 900;
   letter-spacing: 5px;
   line-height: 1.5;
   text-transform: uppercase;
   margin: 0;
+  opacity: 0.3;
 }
-section {
-  margin: 100px;
+main p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  opacity: 0.7;
 }
-img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
+section.secondary {
+  background-color: #f8f8f8;
+}
+.secondary h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0;
+}
+.secondary h3 {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin: 0;
+  opacity: 0.3;
+}
+.card {
+  background-color: white;
+  margin: 30px 0;
+}
+.card h4 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+}
+.card-header {
+}
+.card-body {
+  padding: 30px;
 }
 footer {
   color: white;
@@ -146,5 +185,19 @@ footer li {
   .grid {
     grid-template-columns: 1fr;
     grid-gap: 30px;
+    margin: 0;
+    padding: 40px;
+  }
+  .grid-3-columns {
+    grid-template-columns: 1fr;
+  }
+
+  main h2 {
+    font-size: 24px;
+    margin: 0;
+  }
+  main h3 {
+    font-size: 16px;
+    letter-spacing: 3px;
   }
 }

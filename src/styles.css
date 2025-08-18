@@ -97,13 +97,28 @@ main h3 {
   margin: 0;
   opacity: 0.3;
 }
+main h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  color: #272044;
+  margin: 0;
+}
+
+main h5 {
+  font-weight: 700;
+  font-size: 13px;
+  margin: 0;
+  line-height: 1;
+  color: #272044;
+}
 main p {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   opacity: 0.7;
 }
-section .secondary {
+section.secondary {
   background-color: #f8f8f8;
 }
 .secondary h2 {
@@ -130,10 +145,24 @@ section .secondary {
   line-height: 1.5;
   margin: 0;
 }
-.card-header {
-}
 .card-body {
   padding: 30px;
+}
+.card-footer {
+  padding: 0 30px 30px;
+}
+.btn {
+  display: block;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 16px;
+  background-color: #462cb3;
+  text-decoration: none;
 }
 footer {
   color: white;
@@ -190,8 +219,7 @@ footer li {
   }
   section {
     margin: 0 auto;
-    padding: 50px;
-    row-gap: 30px;
+    padding: 30px;
   }
   main h2 {
     font-size: 24px;
@@ -200,5 +228,17 @@ footer li {
   main h3 {
     font-size: 16px;
     letter-spacing: 3px;
+  }
+  .card-body {
+    padding: 30px;
+    text-align: center;
+  }
+  .btn {
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 15px;
+    text-align: center;
+    padding: 8px;
+    margin: 0 60px;
   }
 }

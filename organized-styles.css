@@ -43,7 +43,8 @@ body {
 header {
   color: white;
   text-align: center;
-  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../image/waterfall.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../image/waterfall.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -54,19 +55,19 @@ header h1 {
   font-size: 96px;
   margin: 30px 0;
   line-height: 1.6;
-  text-shadow: 4px 4px 4px rgba(0,0,0,0.25);
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 header h2 {
   font-size: 40px;
   font-weight: 400;
-  text-shadow: 4px 4px 4px rgba(0,0,0,0.25);
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 header h3 {
   font-size: 24px;
   font-weight: 900;
   letter-spacing: 5px;
   text-transform: uppercase;
-  text-shadow: 4px 4px 4px rgba(0,0,0,0.25);
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 header a {
   font-size: 14px;
@@ -127,13 +128,17 @@ section.secondary {
   background-color: white;
   padding: 24px;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 /* ====== Footer Styles ====== */
 footer {
   color: white;
-  background-image: linear-gradient(rgba(60,54,86,0.7), rgba(60,54,86,0.7)), url("../image/tours.jpg");
+  background-image: linear-gradient(
+      rgba(60, 54, 86, 0.7),
+      rgba(60, 54, 86, 0.7)
+    ),
+    url("../image/tours.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

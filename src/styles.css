@@ -117,16 +117,17 @@ main h4 {
 
 main h5 {
   font-weight: 700;
-  font-size: 13px;
-  margin: 0;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 0;
   line-height: 1;
-  color: #272044;
 }
 main p {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
+  margin-top: 10px;
   color: #272044;
   opacity: 0.7;
 }
